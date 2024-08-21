@@ -15,7 +15,7 @@ mkdir build
 
 ## TurboFFT
 
-### Run the following command to benchmark TurboFFT without fault tolerance
+### Run the following command to benchmark TurboFFT without Fault Tolerance
 
 ```
 ./turbofft --if_bench 2  --thread_bs 1 --gpu A100 --datatype 0 --if_ft  0  --if_err 0
@@ -26,7 +26,7 @@ mkdir build
 
 <img src="fig/3xbarchart_overhead_A100_FP64.png" width=600>
 
-### Run the following command to benchmark TurboFFT without fault tolerance
+### Run the following command to benchmark TurboFFT with Fault Tolerance
 
 ```
 ./turbofft --if_bench 2  --thread_bs 1 --gpu A100 --datatype 0 --if_ft  1  --if_err 0
@@ -36,7 +36,7 @@ mkdir build
 <img src="fig/ABFT_stepwise_optimization_A100_FP32.png" width=600>
 <img src="fig/ABFT_stepwise_optimization_A100_FP64.png" width=600>
 
-### Run the following command to benchmark TurboFFT without fault tolerance
+### Run the following command to benchmark TurboFFT with Error Injection
 ```
 ./turbofft --if_bench 2  --thread_bs 1 --gpu A100 --datatype 0 --if_ft  1  --if_err 1
 ```
